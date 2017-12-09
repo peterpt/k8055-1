@@ -1,0 +1,28 @@
+#!/bin/bash
+k80="k8055cmd"
+echo "CTRL + Z to exit"
+start () {
+di=$($k80 | sed -e 's/;/ /g' | awk '{print$2}')
+dinp=$di
+a1=$($k80 | sed -e 's/;/ /g' | awk '{print$3}')
+a2=$($k80 | sed -e 's/;/ /g' | awk '{print$4}')
+a=$(cat inp.txt | grep "\<di$dinp\>" | awk '{print$2}')
+echo "------------------------"
+echo "| PRESS CTRL+C to STOP |"
+echo "------------------------"
+
+if [[ -z "$a" ]]
+then
+echo $dinp
+echo "Analog Input 1 Value = $a1"
+echo "Analog Input 2 Value = $a2"
+else
+echo "Digital Input activated : $a"
+echo "Analog Input 1 Value = $a1"
+echo "Analog Input 2 Value = $a2"
+fi
+sleep 1
+clear
+start
+}
+start

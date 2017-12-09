@@ -20,6 +20,7 @@ special thanks to:
 # Notes
 - read script allows you to know the state of digital & analog inputs
 - after installing succefully the k8055 module , run ./read in terminal to read input values
+
 <img src="https://s7.postimg.org/41tivg9rf/k8055.jpg" width="55%"></img> 
 
 - i am still mapping the inputs 

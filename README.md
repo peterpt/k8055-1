@@ -25,9 +25,10 @@ special thanks to:
 2013.26.11: added support for PVM110N cards
 
 # Notes
-- read script allows you to know the state of digital & analog inputs
-- after installing succefully the k8055 module , run ./read in terminal to read input values
+- "start" script allows you to know the state of digital & analog inputs
+- after installing succefully the k8055 module , run ./start in terminal to read input values
 
-<img src="https://s7.postimg.org/41tivg9rf/k8055.jpg"></img> 
+<img src="https://s14.postimg.org/5mkb5pai9/start.jpg" width="55%"></img> 
+<img src="https://s14.postimg.org/jt0210le9/create.png" width="55%"></img> 
 
-- i am still mapping the inputs 
+- Scripts are currently been building , the "create" script will allow user to build rules on inputs to activate the outputs of k8055

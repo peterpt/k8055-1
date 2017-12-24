@@ -138,7 +138,7 @@ then
 echo ""
 echo -ne "Write a value between 0 & 255 : "
 read -r ap1v
-$k80 -a1:$ap1v
+$k80 -a1:$ap1v > /dev/null 2>&1
 anv1="$ap1v"
 clear
  KEYS=""
@@ -151,7 +151,7 @@ then
 echo ""
 echo -ne "Write a value between 0 & 255 : "
 read -r ap2v
-$k80 -a2:$ap2v
+$k80 -a2:$ap2v > /dev/null 2>&1
 anv2="$ap2v"
 clear
 KEYS="" 
@@ -201,7 +201,7 @@ a1=$($k80 | sed -e 's/;/ /g' | awk '{print$3}')
 a2=$($k80 | sed -e 's/;/ /g' | awk '{print$4}')
 if [[ "$di" == "$varinp" ]]
 then
-$k80 -d:$varout
+$k80 -d:$varout > /dev/null 2>&1
 fi
 fi
 fi

@@ -1,4 +1,4 @@
-Data value | Activated ports
+Code | Ports
 do0   0
 do1   1   
 do2   2

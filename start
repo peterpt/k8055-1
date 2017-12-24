@@ -223,6 +223,10 @@ echo "| PRESS 3 to quit                             |"
 echo "-----------------------------------------------"
 echo ""
 while [ 1 ];do
+if [[ -f rules.txt ]]
+then
+execrules
+fi
 while read -t 0 ; do
         read -s -r -d "" -N 1 -t 0.2 CHAR && KEYS="$KEYS$CHAR" || break
 done

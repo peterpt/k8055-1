@@ -1,4 +1,11 @@
-libk8055 require libusb-1.0.0 or newer
+
+# K8055 screening
+
+<img src="https://www.velleman.eu/images/products/0/k8055.jpg"></img> 
+
+# Requirements
+- bash
+- libk8055 require libusb-1.0.0 or newer
 
 # Install Requirements
 apt-get install git python-dev libusb-dev swig libusb-1.0-0-dev libwxgtk3.0-dev
